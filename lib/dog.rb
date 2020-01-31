@@ -1,7 +1,9 @@
 # Add your code here
 class Dog 
-  def initialize
-    save 
+  attr_accessor :name 
+  def initialize(name)
+    @name = name 
+    self.save 
   end 
   @@all = []
   def self.all 
